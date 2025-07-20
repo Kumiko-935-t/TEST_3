@@ -38,7 +38,7 @@ php artisan db:seed
 ・MySQL8.0.26
 
 ## ER図  
-/Users/kumiko/coachtech/laravel/TEST_3/TEST_3/ER図.png
+![ER図](.images/ER_zu.png)
 ## URL  
 ・開発環境：http://localhost/  
 ・phpMyAdmin:：http://localhost:8080/
