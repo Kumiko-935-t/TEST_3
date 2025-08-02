@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WeightLogsController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +19,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/weight_logs', function (){
+    return view('weight_logs');
+});
+
+Route::get('/register/step1', function (){
+    return view('register_1');
+});
+
+Route::get('/register/step2', function(){
+    return view('register_2');
+});
+
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/logout', function(){
+    return view('logout');
+});
+
+Route::post('/register/step2', function(){
+    return view('register_2');
 });
